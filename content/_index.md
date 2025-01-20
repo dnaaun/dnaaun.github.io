@@ -1,6 +1,4 @@
 ---
+title: Hi
+paginate_by: 100
 ---
-
-# Dnaaun's home
-
-## [Blog](@/blog/_index.md)

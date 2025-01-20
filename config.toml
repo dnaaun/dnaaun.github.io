@@ -1,4 +1,4 @@
-theme = "no-style-please"
+theme = "even"
 
 # The URL the site will be built for
 base_url = "https://dnaaun.github.io"
@@ -19,3 +19,7 @@ highlight_code = true
 list_pages = true
 add_toc = true
 
+taxonomies = [
+    {name = "categories", feed = false},
+    {name = "tags", feed = false},
+]
