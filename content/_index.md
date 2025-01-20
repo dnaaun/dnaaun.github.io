@@ -1,4 +1,6 @@
----
-title: Hi
-paginate_by: 100
----
++++
+template = 'home.html'
+
+[extra]
+lang = 'en'
++++
