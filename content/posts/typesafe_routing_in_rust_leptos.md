@@ -51,7 +51,7 @@ As is, the above doesn't provide type safety that prevents:
 1. Construction of invalid URLs (when, for example, code constructing URLs becoming stale after restructuring routes).
 2. Accessing non-existent route params.
 
-_react-router_ has a solution to this via [code generation](https://reactrouter.com/how-to/route-module-type-safety). [`tanstack/router`](https://tanstack.com/router/latest), a more modern routing solution in TS-land, was built with type-safety front of mind.
+_react-router_ has a solution to this via [code generation](https://reactrouter.com/how-to/route-module-type-safety). [_tanstack/router_](https://tanstack.com/router/latest), a more modern routing solution in TS-land, was built with type-safety front of mind.
 
 I'm working on a web app using the _leptos_ full-stack framework in Rust. And the [builtin routing solution](https://book.leptos.dev/router/16_routes.html) has no type-safety facilities. So I took a shot at prototyping one.
 
@@ -163,7 +163,7 @@ zwang_routes! {{
 ```rust
 let owner_name = "google";
 let repo_name = "material-design-icons";
-zwang_url!("/owner_name={google}/repo_name={repo_name}/issues/issue_number=1")
+zwang_url!("/owner_name={owner_name}/repo_name={repo_name}/issues/issue_number=1")
 ```
 
 ### Type-safe access to route params
